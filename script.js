@@ -1,17 +1,21 @@
-let arr = ["zero", 1, 2, 3, 4, 5, "fr", "gr"];
+// Изменение элементов массива в JavaScript
 
-for (let i = 0; i < arr.length; i++) {
-  console.log(arr[i]);
+// 1. Создайте массив с элементами 'a', 'b', 'c'. Запишите вместо первого элемента число 1,
+// вместо второго - 2, вместо третьего - 3.
+
+let arr1 = ["a", "b", "c"];
+arr1[0] = 1;
+arr1[1] = 2;
+arr1[2] = 3;
+console.log(arr1);
+
+// 2. Создайте массив с числами. Прибавьте к каждому элементу массива число 3.
+// Выведите на экран измененный массив.
+
+let arr2 = [1, 2, 3, 4, 5];
+
+for (let i = 0; i < arr2.length; i++) {
+  arr2[i] = arr2[i] + 3;
 }
 
-console.log(arr[0]);
-console.log(arr[1]);
-
-let arr1 = [1, 2, 3, 4, 5];
-let res = 0;
-
-for (let k = 0; k < arr1.length; k++) {
-  res += arr1[k];
-}
-
-console.log(res);
+console.log(arr2);
