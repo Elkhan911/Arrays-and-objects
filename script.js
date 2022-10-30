@@ -19,3 +19,24 @@ for (let i = 0; i < arr2.length; i++) {
 }
 
 console.log(arr2);
+
+// 3. Пусть дан такой массив:
+// let arr = [1, 2, 3];
+// Добавьте ему в конец элементы 4 и 5.
+
+let arr3 = [1, 2, 3];
+arr3[3] = 4;
+arr3[4] = 5;
+console.log(arr3);
+
+// 4. Создайте объект user с ключами 'name', 'surname', 'patronymic'
+// и какими - то произвольными значениями.
+// Выведите на экран фамилию, имя и отчество через пробел.
+
+let obj4 = {
+  name: "Ivan",
+  surname: "Stepanov",
+  patronymic: "Igorevic",
+};
+
+console.log(obj4["surname"] + " " + obj4["name"] + " " + obj4["patronymic"]);
