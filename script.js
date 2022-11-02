@@ -40,3 +40,24 @@ let obj4 = {
 };
 
 console.log(obj4["surname"] + " " + obj4["name"] + " " + obj4["patronymic"]);
+
+/* 5. Дан объект:
+let obj = {x: 1, y: 2, z: 3};
+Возведите в квадрат каждый элемент этого объекта. */
+
+let obj5 = { x: 1, y: 2, z: 3 };
+
+// obj5["x"] = obj5["x"] * obj5["x"];
+// console.log(obj5["x"]);
+
+// obj5["y"] = obj5["y"] * obj5["y"];
+// console.log(obj5["y"]);
+
+// obj5["z"] = obj5["z"] * obj5["z"];
+// console.log(obj5["z"]);
+
+for (let key in obj5) {
+  obj5[key] = Math.pow(obj5[key], 2);
+}
+console.log(obj5);
+
