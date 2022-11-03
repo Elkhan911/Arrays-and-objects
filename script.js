@@ -77,3 +77,40 @@ let obj7 = { x: 1, y: 2, z: 3 };
 let keys7 = Object.keys(obj7);
 console.log(keys7.length);
 
+/* 8. Дан следующий объект:
+let obj = {x: 1, y: 2, z: 3};
+Дана переменная key, в которой хранится один из ключей нашего объекта. 
+Выведите с помощью этой переменной соответствующий элемент объекта. */
+
+let obj8 = { x: 1, y: 2, z: 3 };
+let key8 = "y";
+
+console.log(obj8[key8]);
+
+/* 9. Дан объект:
+let obj = {
+	x: 1,
+	y: 2,
+	z: 3
+};
+Даны переменные:
+let key1 = 'x';
+let key2 = 'y';
+let key3 = 'z';
+Сделайте так, чтобы ключи объекта брались из этих переменных. */
+
+let key9A = "x";
+let key9B = "y";
+let key9C = "z";
+
+let obj9 = {
+  [key9A]: 1,
+  [key9B]: 2,
+  [key9C]: 3,
+};
+
+console.log(obj9);
+
+//
+let arr = ["1", "2", "3"];
+console.log(typeof arr[0]);
