@@ -41,6 +41,8 @@ let obj4 = {
 
 console.log(obj4["surname"] + " " + obj4["name"] + " " + obj4["patronymic"]);
 
+// Объекты
+
 /* 5. Дан объект:
 let obj = {x: 1, y: 2, z: 3};
 Возведите в квадрат каждый элемент этого объекта. */
@@ -60,4 +62,18 @@ for (let key in obj5) {
   obj5[key] = Math.pow(obj5[key], 2);
 }
 console.log(obj5);
+
+/* 6. Получите массив ключей следующего объекта:
+let obj = {x: 1, y: 2, z: 3}; */
+
+let obj6 = { x: 1, y: 2, z: 3 };
+let keys6 = Object.keys(obj6);
+console.log(keys6);
+
+/* 7. Найдите количество элементов в следующем объекте:
+let obj = {x: 1, y: 2, z: 3}; */
+
+let obj7 = { x: 1, y: 2, z: 3 };
+let keys7 = Object.keys(obj7);
+console.log(keys7.length);
 
