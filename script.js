@@ -110,7 +110,3 @@ let obj9 = {
 };
 
 console.log(obj9);
-
-//
-let arr = ["1", "2", "3"];
-console.log(typeof arr[0]);
